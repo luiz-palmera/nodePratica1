@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pratica.JS</title>
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <br/><br/><br/>
+      <h2>Pratica.JS</h2>
+      <br/>
+      <% if (banco.length > 0) { %>
+        <div class="row">
+          <% for(var i = 0; i < banco.length; i++) {%>
+            <div class="col-md-12 jumbotron">
+              <h4 ><%= banco[i].titulo %></h4>
+              <p><%= banco[i].bancos %></p>
+            </div>
+          <% } %>
+        </div>
+      <% } %>
+    </div>
+  </body>
+</html>
